@@ -1,0 +1,99 @@
+label,content
+content," <div class=""strib-styles ssa ssb ssc"">
+  <section class=""container-lg elex-header"">
+    <h5 class=""font-popular-light topper""><span class=""font-popular-medium""><a href=""https://www.startribune.com/local/coronavirus/"">Coronavirus</a></span></h5>
+    <h1>How Minnesota's skies have changed during lockdown</h1>
+  <div class=""byline"">
+    <address>By
+      <a rel=""author"" href=""http://www.startribune.com/jeff-hargarten/274254381/"">Jeff Hargarten</a>
+    </address>
+    <span class=""spacer""></span>
+    Star Tribune
+    <span class=""spacer-alt""></span>
+    <time pubdate datetime=""2020-05-09T16:00:00"">May 9, 2020</time>
+  </div>
+  <p></p>
+  <!-- share -->
+</section>
+
+      <section class=""container-lg leadin"">
+        <p>Since coronavirus lockdowns started shutting down society in Minnesota and globally, the skies above are cleaner, clearer and less crowded.</p>
+
+        <p>Using satellite imagery from various space agencies and tracking data reveals a few ways a lack of activity below has changed what's happening above the clouds.</p>
+      </section>
+
+      <div class=""rule""></div>
+      <section class=""body"">
+        <h2 class=""chartTitle"">Air traffic has almost vanished</h2>
+        <p>Far fewer plans are soaring over Minnesota compared to last year, as airlines reduce scheduled flights in response to plummeting passenger demand and public health guidance discouraging air travel.</p>
+        <p>Though many airports remain open and domestic travel is still technically unrestricted, a ban on international journeys and fears of COVID-19's spread have kept Minnesotans and other Americans on the ground.</p>
+      </section>
+
+      <div class=""slide"">
+          <div class=""signs""><div class=""left"">⇦ May 6, 2019</div><div class=""right"">May 6, 2020 ⇨</div></div>
+        <div id=""comparison-container1"">
+            <div id=""before1"" class=""sidemap""></div>
+            <div id=""after1"" class=""sidemap""></div>
+        </div>
+      </div>
+
+
+      <div class=""rule""></div>
+      <section class=""body"">
+        <h2 class=""chartTitle"">Atmopsheric pollution has decreased</h2>
+        <p>The skies are also somewhat cleaner, due in large part to reduced air traffic and <a href=""https://www.startribune.com/how-minnesotans-are-lightening-up-on-social-distancing/568966921/"">fewer cars on the road</a>, according to data from the European Space Agency's Copernicus Sentinel-5P satellite, which has been <a href=""https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P/Coronavirus_lockdown_leading_to_drop_in_pollution_across_Europe"">tracking COVID-19's impact on emissions</a>.</p>
+
+        <p>Comparing worldwide pollution maps from January to late March – around when Minnesota's shelter-in-place order took effect – shows a noticable reduction in pollutants above the state.</p>
+      </section>
+
+      <div class=""slide"">
+          <div class=""signs""><div class=""left"">⇦ January 21, 2019</div><div class=""right"">March 29, 2020 ⇨</div></div>
+          <div id=""comparison-container2"">
+              <div id=""before2"" class=""sidemap""></div>
+              <div id=""after2"" class=""sidemap""></div>
+          </div>
+      </div>
+
+
+      <div class=""rule""></div>
+      <section class=""body"">
+        <h2 class=""chartTitle"">Night lights are dimmed</h2>
+        <p>With many Minnesotans working from home and most businesses either shuttered or keeping shorter, earlier hours, Minnesota's cities and suburbs are less lit-up at night.</p>
+
+        <p>Darker skies are a side-effect of the shutdowns, as shown by quartley VERS satellite data comparing late 2019 to early April 2020. Whether more stars are visible in urban areas after nightfall is unclear.</p>
+      </section>
+
+      <div class=""slide"">
+          <div class=""signs""><div class=""left"">⇦ 2019</div><div class=""right"">2020 ⇨</div></div>
+          <div id=""comparison-container3"">
+              <div id=""before3"" class=""sidemap""></div>
+              <div id=""after3"" class=""sidemap""></div>
+          </div>
+      </div>
+
+          
+
+<section class=""container-lg"">
+
+    <div class=""bottom_byline"">Maps: Jeff Hargarten, Star Tribune • Sources: OpenSky Network</div>
+
+  <div class=""article-author-contact"">
+
+        <div class=""article-author-hcard"">
+                <p></p><p><span style=""font-size: 10pt; font-family: Arial;""><strong>Jeff Hargarten </strong>is a data journalist for the Star Tribune focusing on data-driven reporting and visualization. He has covered elections, technology, criminal justice, demographics and public health.</span></p><p></p>
+                <p><a class=""article-author-hcard__email"" target=""_blank"" href=""mailto:Jeff.Hargarten@startribune.com?subject=How Minnesota's skies have changed during lockdown"" data-linkname=""Jeff.Hargarten@startribune.com"" data-linktype=""email"" data-modulename=""Article"" data-moduletype=""zone1-content"" data-position=""0-1-author"">Jeff.Hargarten@startribune.com</a>
+                <a class=""article-author-hcard__phone"" href=""tel:612-673-4642"" data-linkname=""612-673-4642"" data-linktype=""phone"" data-modulename=""Article"" data-moduletype=""zone1-content"" data-position=""0-1-author"">612-673-4642</a>
+                <a class=""article-author-hcard__twitter"" href=""http://twitter.com/JeffHargarten"" target=""_blank"" data-linkname=""JeffHargarten"" data-linktype=""twitter"" data-modulename=""Article"" data-moduletype=""zone1-content"" data-position=""0-1-author"">JeffHargarten</a></p>
+        </div>
+ </div>
+</section>
+</div>"
+scripts,news/projects/all/20200508-cvskies/js/index.bundle.js
+styles,news/projects/all/20200508-cvskies/styles/index.bundle.css
+script libraries,"<script src=""https://cdn.polyfill.io/v2/polyfill.min.js""></script>
+<script src=""https://static.startribune.com/assets/libs/pym.js/1.3.2/pym.v1.min.js""></script>
+<script src=""https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js""></script>
+<script src=""https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.js""></script>
+<script src=""https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.js""></script>
+<script src=""https://kit.fontawesome.com/a076d05399.js""></script>"
+style libraries,
