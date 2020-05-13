@@ -88,8 +88,8 @@ utils.documentReady(() => {
 // });
 
 import mn from '../sources/mn.json';
-import beforeFlights from '../sources/20200123-flights.json';
-import afterFlights from '../sources/20200506-flights.json';
+import beforeFlights from '../sources/flights_old.json';
+import afterFlights from '../sources/flights_new.json';
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoic3RhcnRyaWJ1bmUiLCJhIjoiY2sxYjRnNjdqMGtjOTNjcGY1cHJmZDBoMiJ9.St9lE8qlWR5jIjkPYd3Wqw';
 
@@ -173,7 +173,7 @@ var afterMap1 = new mapboxgl.Map({
   // });
 
   var container1 = '#comparison-container1';
-  var map1 = new mapboxgl.Compare(beforeMap1, afterMap1, container1, {});
+  var map1 = new mapboxgl.Compare(afterMap1, beforeMap1, container1, {});
 
   beforeMap1.on('load', function() {
 
@@ -207,7 +207,7 @@ var afterMap1 = new mapboxgl.Map({
           'type': 'circle',
            'paint': {
               'circle-opacity': 0.5,
-              'circle-radius': 4,
+              'circle-radius': 2,
               'circle-stroke-width': 1,
               'circle-stroke-color': '#333333',
               'circle-color': '#C28059'
@@ -248,7 +248,7 @@ var afterMap1 = new mapboxgl.Map({
           'type': 'circle',
            'paint': {
               'circle-opacity': 0.5,
-              'circle-radius': 4,
+              'circle-radius': 2,
               'circle-stroke-width': 1,
               'circle-stroke-color': '#333333',
               'circle-color': '#C28059'
@@ -302,7 +302,7 @@ var afterMap2 = new mapboxgl.Map({
   // });
 
   var container2 = '#comparison-container2';
-  var map2 = new mapboxgl.Compare(beforeMap2, afterMap2, container2, {});
+  var map2 = new mapboxgl.Compare(afterMap2, beforeMap2, container2, {});
 
   beforeMap2.on('load', function() {
 

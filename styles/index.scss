@@ -112,6 +112,12 @@ body * {
   display:inline-block;
 }
 
+.label {
+  font-size:0.8em !important;
+  padding:2px !important;
+  font-weight:normal !important;
+}
+
 .ramp {
   width:30px;
   height:15px;
@@ -133,7 +139,7 @@ body * {
   background-color: #ffffff;
 }
 
-#before2 .mapboxgl-canvas-container, #after2 .mapboxgl-canvas-container {
+#before2 .mapboxgl-canvas-container, #after2 .mapboxgl-canvas-container, #before3 .mapboxgl-canvas-container, #after3 .mapboxgl-canvas-container {
  display:none;
 }
 
