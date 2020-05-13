@@ -16,19 +16,27 @@
 </section>
 
       <section class="container-lg leadin">
-        <p>Since coronavirus lockdowns started shutting down society in Minnesota and globally, the skies above are cleaner, clearer and less crowded.</p>
+        <p>Since coronavirus lockdowns started slowing society's normal daily grind, data shows the skies above are cleaner, clearer and less crowded.</p>
 
-        <p>Using satellite imagery from various space agencies and tracking data reveals a few ways a lack of activity below has changed what's happening above the clouds.</p>
+        <p>Using satellite imagery and tracking statistics from various sources reveals a few ways reduced human activity on the ground has changed what's happening above the clouds.</p>
+
+        <p>Swipe through the maps below to compare conditions in Minnesota's airspace before and after quarantine orders were enacted.</p>
       </section>
 
       <div class="rule"></div>
       <section class="body">
-        <h2 class="chartTitle">Air traffic has almost vanished</h2>
-        <p>Far fewer plans are soaring over Minnesota compared to last year, as airlines reduce scheduled flights in response to plummeting passenger demand and public health guidance discouraging air travel.</p>
-        <p>Though many airports remain open and domestic travel is still technically unrestricted, a ban on international journeys and fears of COVID-19's spread have kept Minnesotans and other Americans on the ground.</p>
+        <h2 class="chartTitle">Air traffic has dwindled</h2>
+        <p>Far fewer planes are soaring over Minnesota compared to last year, as airlines reduce scheduled flights in response to plummeting passenger demand and public health guidance discouraging air travel.</p>
+
+        <p>Though many airports remain open and domestic travel is still technically unrestricted, a ban on international journeys, the shutdown of some airlines and fears concerning COVID-19's spread have kept Minnesotans and other Americans on the ground.</p>
+
+        <p>Using snapshots of 7:00 p.m. flight traffic from <a href="https://opensky-network.org/">The OpenSky Network</a> shows more planes over Minnesota last year than this May, over a month since shelter-in-place took effect statewide.</p>
       </section>
 
       <div class="slide">
+          <div class="legend">
+            <div class="l"><span class="dot middle"></span> tracked flight position</div>
+          </div>
           <div class="signs"><div class="left">&#8678; May 6, 2019</div><div class="right">May 6, 2020 &#8680;</div></div>
         <div id="comparison-container1">
             <div id="before1" class="sidemap"></div>
@@ -40,16 +48,21 @@
       <div class="rule"></div>
       <section class="body">
         <h2 class="chartTitle">Atmopsheric pollution has decreased</h2>
-        <p>The skies are also somewhat cleaner, due in large part to reduced air traffic and <a href="https://www.startribune.com/how-minnesotans-are-lightening-up-on-social-distancing/568966921/">fewer cars on the road</a>, according to data from the European Space Agency's Copernicus Sentinel-5P satellite, which has been <a href="https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P/Coronavirus_lockdown_leading_to_drop_in_pollution_across_Europe">tracking COVID-19's impact on emissions</a>.</p>
+        <p>The skies are also somewhat cleaner, due in large part to reduced air traffic and <a href="https://www.startribune.com/how-minnesotans-are-lightening-up-on-social-distancing/568966921/">fewer cars on the road</a>.</p>
 
-        <p>Comparing worldwide pollution maps from January to late March – around when Minnesota's shelter-in-place order took effect – shows a noticable reduction in pollutants above the state.</p>
+        <p>Satellite measurements taken by the European Space Agency's Copernicus Sentinel-5P satellite tracks the volume of the pollutant nitrogen dioxide (NO2) in the atmosphere, excess of which is a byproduct of human activity.</p>
+
+        <p>Comparing pollution maps from late February to early May shows a noticable reduction in NO2 pollutants above the state, and <a href="https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P/Coronavirus_lockdown_leading_to_drop_in_pollution_across_Europe">many other places as well</a>, which the ESA attributes to quarantines.</p>
       </section>
 
-      <div class="slide">
-          <div class="signs"><div class="left">&#8678; January 21, 2019</div><div class="right">March 29, 2020 &#8680;</div></div>
+      <div class="slide" id="pollution">
+          <div class="legend">
+            <div class="l ramp" style="background-color:#000000;"></div><div class="l ramp" style="background-color:#2A0202;"></div><div class="l ramp" style="background-color:#550505;"></div><div class="l ramp" style="background-color:#7F0808"></div><div class="l ramp" style="background-color:#AA0A0A;"></div><div class="l ramp" style="background-color:#D40D0D;"></div><div class="l ramp" style="background-color:#FF1010;"></div>
+          </div>
+          <div class="signs"><div class="left">&#8678; February 29, 2019</div><div class="right">May 6, 2020 &#8680;</div></div>
           <div id="comparison-container2">
-              <div id="before2" class="sidemap"></div>
-              <div id="after2" class="sidemap"></div>
+              <div id="before2" class="sidemap"><img class="overlaid" src="./img/20200209-no2.png" /></div>
+              <div id="after2" class="sidemap"><img class="overlaid" src="./img/20200507-no2.png" /></div>
           </div>
       </div>
 
@@ -57,24 +70,27 @@
       <div class="rule"></div>
       <section class="body">
         <h2 class="chartTitle">Night lights have dimmed</h2>
-        <p>With many Minnesotans working from home and most businesses either shuttered or keeping shorter, earlier hours, Minnesota's cities and suburbs are less lit-up at night.</p>
+        <p>With many Minnesotans working from home and most businesses either shuttered or keeping shorter hours, Minnesota's cities and suburbs are emitting less light.</p>
 
-        <p>Darker skies are a side-effect of the shutdowns, as shown by quartley VERS satellite data comparing late 2019 to early April 2020. Whether more stars are visible in urban areas after nightfall is unclear.</p>
+        <p>Darker skies are a side-effect of the shutdowns, as shown by NASA's VIIRS satellite data comparing nighttime glow just before coronavirus alarms went into full effect in late February to early May.</p>
+        
+        <p>Whether or not more stars are visible to the naked eye in urban areas after nightfall is unclear.</p>
       </section>
 
       <div class="slide">
-          <div class="signs"><div class="left">&#8678; 2019</div><div class="right">2020 &#8680;</div></div>
+          <div class="legend">
+              <div class="l ramp" style="background-color:#000000;"></div><div class="l ramp" style="background-color:#2A2A2A;"></div><div class="l ramp" style="background-color:#555555;"></div><div class="l ramp" style="background-color:#7F7F7F;"></div><div class="l ramp" style="background-color:#AAAAAA;"></div><div class="l ramp" style="background-color:#D4D4D4;"></div><div class="l ramp" style="background-color:#efefef;"></div>
+          </div>
+          <div class="signs"><div class="left">&#8678; March 13, 2020</div><div class="right">May 6, 2020 &#8680;</div></div>
           <div id="comparison-container3">
               <div id="before3" class="sidemap"></div>
               <div id="after3" class="sidemap"></div>
           </div>
       </div>
 
-          
-
 <section class="container-lg">
 
-    <div class="bottom_byline">Maps: Jeff Hargarten, Star Tribune • Sources: OpenSky Network</div>
+    <div class="bottom_byline">Maps: Jeff Hargarten, Star Tribune • Sources: OpenSky Network, European Space Agency, NASA, Google Earth Engine</div>
 
   <div class="article-author-contact">
 

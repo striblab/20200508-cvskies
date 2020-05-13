@@ -88,6 +88,8 @@ utils.documentReady(() => {
 // });
 
 import mn from '../sources/mn.json';
+import beforeFlights from '../sources/20200123-flights.json';
+import afterFlights from '../sources/20200506-flights.json';
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoic3RhcnRyaWJ1bmUiLCJhIjoiY2sxYjRnNjdqMGtjOTNjcGY1cHJmZDBoMiJ9.St9lE8qlWR5jIjkPYd3Wqw';
 
@@ -134,7 +136,8 @@ var beforeMap1 = new mapboxgl.Map({
   center: center,
   zoom: dzoom,
   minZoom: dzoom,
-  maxZoom: 12
+  maxZoom: 12,
+  interactive: false
   });
    
 var afterMap1 = new mapboxgl.Map({
@@ -143,10 +146,11 @@ var afterMap1 = new mapboxgl.Map({
   center: center,
   zoom: dzoom,
   minZoom: dzoom,
-  maxZoom: 12
+  maxZoom: 12,
+  interactive: false
   });
 
-  afterMap1.addControl(new mapboxgl.NavigationControl());
+  // afterMap1.addControl(new mapboxgl.NavigationControl());
 
   beforeMap1.scrollZoom.disable();
   beforeMap1.doubleClickZoom.disable();
@@ -159,14 +163,14 @@ var afterMap1 = new mapboxgl.Map({
   afterMap1.dragRotate.disable();
 
   const toggleControl1 = new CityReset();
-  afterMap1.addControl(toggleControl1,'top-right');
+  // afterMap1.addControl(toggleControl1,'top-right');
 
-    $('.my-custom-control2').on('click', function(){
-    afterMap1.jumpTo({
-      center: center,
-      zoom: dzoom,
-    });
-  });
+  //   $('.my-custom-control2').on('click', function(){
+  //   afterMap1.jumpTo({
+  //     center: center,
+  //     zoom: dzoom,
+  //   });
+  // });
 
   var container1 = '#comparison-container1';
   var map1 = new mapboxgl.Compare(beforeMap1, afterMap1, container1, {});
@@ -190,6 +194,26 @@ var afterMap1 = new mapboxgl.Map({
             }
       });
 
+      beforeMap1.addSource('beforeFlights', {
+        type: 'geojson',
+        data: beforeFlights
+      });
+
+      beforeMap1.addLayer({
+          'id': 'beforeFlights-layer',
+          'interactive': true,
+          'source': 'beforeFlights',
+          'layout': {},
+          'type': 'circle',
+           'paint': {
+              'circle-opacity': 0.5,
+              'circle-radius': 4,
+              'circle-stroke-width': 1,
+              'circle-stroke-color': '#333333',
+              'circle-color': '#C28059'
+           }
+      });
+
     });
 
   afterMap1.on('load', function() {
@@ -210,50 +234,28 @@ var afterMap1 = new mapboxgl.Map({
               'line-color': '#aaaaaa'
             }
       });
-
-    });
-
   
-// map1.on('load', function() {
+      afterMap1.addSource('afterFlights', {
+        type: 'geojson',
+        data: afterFlights
+      });
 
-//       map1.addSource('mpls', {
-//         type: 'geojson',
-//         data: mpls
-//       });
+      afterMap1.addLayer({
+          'id': 'afterFlights-layer',
+          'interactive': true,
+          'source': 'afterFlights',
+          'layout': {},
+          'type': 'circle',
+           'paint': {
+              'circle-opacity': 0.5,
+              'circle-radius': 4,
+              'circle-stroke-width': 1,
+              'circle-stroke-color': '#333333',
+              'circle-color': '#C28059'
+           }
+      });
 
-//       map1.addLayer({
-//             'id': 'mpls-layer',
-//             'interactive': true,
-//             'source': 'mpls',
-//             'layout': {},
-//             'type': 'line',
-//             'paint': {
-//               'line-width': 0.7,
-//               'line-color': '#aaaaaa'
-//             }
-//         });
-
-//         map1.addSource('locations', {
-//           type: 'geojson',
-//           data: locations
-//         });
-  
-//         map1.addLayer({
-//           'id': 'arrest-layer',
-//           'interactive': true,
-//           'source': 'locations',
-//           'layout': {},
-//           'type': 'circle',
-//            'paint': {
-//               'circle-opacity': 0.5,
-//               'circle-radius': 4,
-//               'circle-stroke-width': 0,
-//               'circle-stroke-color': '#C28059',
-//               'circle-color': '#C28059'
-//            }
-//       });
-
-// });
+  });
 
 
 //GREENHOUSE MAP
@@ -263,7 +265,8 @@ var beforeMap2 = new mapboxgl.Map({
   center: center,
   zoom: dzoom,
   minZoom: dzoom,
-  maxZoom: 12
+  maxZoom: 12,
+  interactive: false
   });
    
 var afterMap2 = new mapboxgl.Map({
@@ -272,10 +275,11 @@ var afterMap2 = new mapboxgl.Map({
   center: center,
   zoom: dzoom,
   minZoom: dzoom,
-  maxZoom: 12
+  maxZoom: 12,
+  interactive: false
   });
 
-  afterMap2.addControl(new mapboxgl.NavigationControl());
+  // afterMap2.addControl(new mapboxgl.NavigationControl());
 
   beforeMap2.scrollZoom.disable();
   beforeMap2.doubleClickZoom.disable();
@@ -287,15 +291,15 @@ var afterMap2 = new mapboxgl.Map({
   afterMap2.touchZoomRotate.disableRotation();
   afterMap2.dragRotate.disable();
 
-  const toggleControl2 = new CityReset();
-  afterMap2.addControl(toggleControl2,'top-right');
+  // const toggleControl2 = new CityReset();
+  // afterMap2.addControl(toggleControl2,'top-right');
 
-    $('.my-custom-control2').on('click', function(){
-    afterMap2.jumpTo({
-      center: center,
-      zoom: dzoom,
-    });
-  });
+  //   $('.my-custom-control2').on('click', function(){
+  //   afterMap2.jumpTo({
+  //     center: center,
+  //     zoom: dzoom,
+  //   });
+  // });
 
   var container2 = '#comparison-container2';
   var map2 = new mapboxgl.Compare(beforeMap2, afterMap2, container2, {});
@@ -350,7 +354,8 @@ var beforeMap3 = new mapboxgl.Map({
   center: center,
   zoom: dzoom,
   minZoom: dzoom,
-  maxZoom: 12
+  maxZoom: 12,
+  interactive: false
   });
    
 var afterMap3 = new mapboxgl.Map({
@@ -359,10 +364,11 @@ var afterMap3 = new mapboxgl.Map({
   center: center,
   zoom: dzoom,
   minZoom: dzoom,
-  maxZoom: 12
+  maxZoom: 12,
+  interactive: false
   });
 
-  afterMap3.addControl(new mapboxgl.NavigationControl());
+  // afterMap3.addControl(new mapboxgl.NavigationControl());
 
   beforeMap3.scrollZoom.disable();
   beforeMap3.doubleClickZoom.disable();
@@ -374,15 +380,15 @@ var afterMap3 = new mapboxgl.Map({
   afterMap3.touchZoomRotate.disableRotation();
   afterMap3.dragRotate.disable();
 
-  const toggleControl3 = new CityReset();
-  afterMap3.addControl(toggleControl3,'top-right');
+  // const toggleControl3 = new CityReset();
+  // afterMap3.addControl(toggleControl3,'top-right');
 
-    $('.my-custom-control2').on('click', function(){
-    afterMap3.jumpTo({
-      center: center,
-      zoom: dzoom,
-    });
-  });
+  //   $('.my-custom-control2').on('click', function(){
+  //   afterMap3.jumpTo({
+  //     center: center,
+  //     zoom: dzoom,
+  //   });
+  // });
 
   var container3 = '#comparison-container3';
   var map3 = new mapboxgl.Compare(beforeMap3, afterMap3, container3, {});
