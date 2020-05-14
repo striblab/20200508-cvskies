@@ -147,6 +147,14 @@ body * {
   z-index:1;
 }
 
+#lights .mapboxgl-compare {
+  background-color:#fff;
+  position:absolute;
+  width:2px;
+  height:530px;
+  z-index:1;
+}
+
 #pollution .mapboxgl-compare {
   background-color:#fff;
   position:absolute;
@@ -194,15 +202,18 @@ body * {
 
 @media (max-width:600px) {
   #pollution .mapboxgl-compare {
+    height:300px !important;
+  }
+
+  #lights .mapboxgl-compare {
     height:320px !important;
   }
 
-  // .overlaid {
-  //   position: absolute;
-  //   clip: rect(0px,60px,200px,0px);
-  // }
-
   #pollution {
     height: 370px !important;
+  }
+
+  #lights {
+    height: 400px !important;
   }
 }
