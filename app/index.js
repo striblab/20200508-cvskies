@@ -391,7 +391,7 @@ var afterMap3 = new mapboxgl.Map({
   // });
 
   var container3 = '#comparison-container3';
-  var map3 = new mapboxgl.Compare(beforeMap3, afterMap3, container3, {});
+  var map3 = new mapboxgl.Compare(afterMap3, beforeMap3, container3, {});
    
   beforeMap3.on('load', function() {
 

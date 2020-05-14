@@ -123,31 +123,35 @@ body * {
   height:15px;
 }
 
-.elementary {
-  background-color: #89B07D;
+.overlaid {
+  // height:430px !important;
 }
 
 .middle {
-  background-color: #b37862;
+  background-color: #C28059;
 }
 
-.k8 {
-  background-color: #80ADAD;
-}
-
-.other {
-  background-color: #ffffff;
+#pollution {
+  height: 530px !important;
 }
 
 #before2 .mapboxgl-canvas-container, #after2 .mapboxgl-canvas-container, #before3 .mapboxgl-canvas-container, #after3 .mapboxgl-canvas-container {
  display:none;
 }
 
-.mapboxgl-compare {
+#flights .mapboxgl-compare {
   background-color:#fff;
   position:absolute;
   width:2px;
-  height:500px;
+  height:530px;
+  z-index:1;
+}
+
+#pollution .mapboxgl-compare {
+  background-color:#fff;
+  position:absolute;
+  width:2px;
+  height:450px;
   z-index:1;
 }
 .mapboxgl-compare .compare-swiper-vertical {
@@ -190,9 +194,15 @@ body * {
 
 @media (max-width:600px) {
   #pollution .mapboxgl-compare {
-    height:350px !important;
+    height:320px !important;
   }
+
+  // .overlaid {
+  //   position: absolute;
+  //   clip: rect(0px,60px,200px,0px);
+  // }
+
   #pollution {
-    height: 400px !important;
+    height: 370px !important;
   }
 }
