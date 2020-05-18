@@ -118,6 +118,24 @@ body * {
   font-weight:normal !important;
 }
 
+#lights2, #pollution2 {
+  height: auto !important;
+}
+
+.adjacent {
+  width:48%;
+  display:inline-block;
+  margin-bottom:15px;
+}
+
+.maplabel {
+  font-weight:900;
+}
+
+.adjacent img {
+  width:100%;
+}
+
 .ramp {
   width:30px;
   height:15px;
