@@ -223,6 +223,11 @@ body * {
     height:300px !important;
   }
 
+  .content-scroll {
+    max-width: 100% !important;
+    margin: auto;
+}
+
   #lights .mapboxgl-compare {
     height:320px !important;
   }
