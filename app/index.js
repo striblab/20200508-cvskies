@@ -199,20 +199,35 @@ var afterMap1 = new mapboxgl.Map({
         data: beforeFlights
       });
 
+      // beforeMap1.addLayer({
+      //     'id': 'beforeFlights-layer',
+      //     'interactive': true,
+      //     'source': 'beforeFlights',
+      //     'layout': {},
+      //     'type': 'circle',
+      //      'paint': {
+      //         'circle-opacity': 0.5,
+      //         'circle-radius': 2,
+      //         'circle-stroke-width': 1,
+      //         'circle-stroke-color': '#333333',
+      //         'circle-color': '#C28059'
+      //      }
+      // });
+
       beforeMap1.addLayer({
-          'id': 'beforeFlights-layer',
-          'interactive': true,
-          'source': 'beforeFlights',
-          'layout': {},
-          'type': 'circle',
-           'paint': {
-              'circle-opacity': 0.5,
-              'circle-radius': 2,
-              'circle-stroke-width': 1,
-              'circle-stroke-color': '#333333',
-              'circle-color': '#C28059'
-           }
-      });
+        'id': 'beforeFlights-layer',
+        'type': 'line',
+        'source': 'beforeFlights',
+        'layout': {
+        'line-join': 'round',
+        'line-cap': 'round'
+        },
+            'paint': {
+            'line-color': '#7D739C',
+            'line-width': 1,
+            'line-opacity': 0.3
+            }
+        });
 
     });
 
@@ -240,20 +255,35 @@ var afterMap1 = new mapboxgl.Map({
         data: afterFlights
       });
 
+      // afterMap1.addLayer({
+      //     'id': 'afterFlights-layer',
+      //     'interactive': true,
+      //     'source': 'afterFlights',
+      //     'layout': {},
+      //     'type': 'circle',
+      //      'paint': {
+      //         'circle-opacity': 0.5,
+      //         'circle-radius': 2,
+      //         'circle-stroke-width': 1,
+      //         'circle-stroke-color': '#333333',
+      //         'circle-color': '#C28059'
+      //      }
+      // });
+
       afterMap1.addLayer({
-          'id': 'afterFlights-layer',
-          'interactive': true,
-          'source': 'afterFlights',
-          'layout': {},
-          'type': 'circle',
-           'paint': {
-              'circle-opacity': 0.5,
-              'circle-radius': 2,
-              'circle-stroke-width': 1,
-              'circle-stroke-color': '#333333',
-              'circle-color': '#C28059'
-           }
-      });
+        'id': 'afterFlights-layer',
+        'type': 'line',
+        'source': 'afterFlights',
+        'layout': {
+        'line-join': 'round',
+        'line-cap': 'round'
+        },
+            'paint': {
+            'line-color': '#7D739C',
+            'line-width': 1,
+            'line-opacity': 0.3
+            }
+        });
 
   });
 

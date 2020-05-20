@@ -153,6 +153,10 @@ body * {
   height: 530px !important;
 }
 
+#pollution2 img {
+  width:520px;
+}
+
 #before2 .mapboxgl-canvas-container, #after2 .mapboxgl-canvas-container, #before3 .mapboxgl-canvas-container, #after3 .mapboxgl-canvas-container {
  display:none;
 }
@@ -234,6 +238,10 @@ body * {
 
   #pollution {
     height: 370px !important;
+  }
+
+  #pollution2 img {
+    width:100%;
   }
 
   #lights {
