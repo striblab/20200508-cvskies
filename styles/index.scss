@@ -41,6 +41,11 @@ $selector-wrapper: '.strib-styles.ssa.ssb.ssc';
   font-style: normal;
 }
 
+.slide {
+-webkit-user-select: none; 
+-ms-user-select: none; 
+user-select: none; 
+}
 
 .topper a {
   color:#333333 !important;
