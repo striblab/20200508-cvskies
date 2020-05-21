@@ -224,7 +224,7 @@ var afterMap1 = new mapboxgl.Map({
         },
             'paint': {
             'line-color': '#7D739C',
-            'line-width': 1,
+            'line-width': 0.5,
             'line-opacity': 0.3
             }
         });
@@ -245,7 +245,7 @@ var afterMap1 = new mapboxgl.Map({
             'layout': {},
             'type': 'line',
             'paint': {
-              'line-width': 1,
+              'line-width': 0.5,
               'line-color': '#aaaaaa'
             }
       });
@@ -280,7 +280,7 @@ var afterMap1 = new mapboxgl.Map({
         },
             'paint': {
             'line-color': '#7D739C',
-            'line-width': 1,
+            'line-width': 0.5,
             'line-opacity': 0.3
             }
         });
