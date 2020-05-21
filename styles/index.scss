@@ -41,13 +41,6 @@ $selector-wrapper: '.strib-styles.ssa.ssb.ssc';
   font-style: normal;
 }
 
-body * {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 
 .topper a {
   color:#333333 !important;
@@ -150,7 +143,7 @@ body * {
 }
 
 #pollution {
-  height: 530px !important;
+  height: 580px !important;
 }
 
 #pollution2 img {
@@ -181,7 +174,7 @@ body * {
   background-color:#fff;
   position:absolute;
   width:2px;
-  height:450px;
+  height:500px;
   z-index:1;
 }
 .mapboxgl-compare .compare-swiper-vertical {
@@ -230,7 +223,7 @@ body * {
 
 @media (max-width:600px) {
   #pollution .mapboxgl-compare {
-    height:300px !important;
+    height:320px !important;
   }
   #lights .mapboxgl-compare {
     height:320px !important;

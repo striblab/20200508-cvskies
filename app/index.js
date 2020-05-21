@@ -378,92 +378,92 @@ var afterMap2 = new mapboxgl.Map({
 
 
 //LIGHTS MAP
-var beforeMap3 = new mapboxgl.Map({
-  container: 'before3',
-  style: 'mapbox://styles/startribune/ck1b7427307bv1dsaq4f8aa5h',
-  center: center,
-  zoom: dzoom,
-  minZoom: dzoom,
-  maxZoom: 12,
-  interactive: false
-  });
+// var beforeMap3 = new mapboxgl.Map({
+//   container: 'before3',
+//   style: 'mapbox://styles/startribune/ck1b7427307bv1dsaq4f8aa5h',
+//   center: center,
+//   zoom: dzoom,
+//   minZoom: dzoom,
+//   maxZoom: 12,
+//   interactive: false
+//   });
    
-var afterMap3 = new mapboxgl.Map({
-  container: 'after3',
-  style: 'mapbox://styles/startribune/ck1b7427307bv1dsaq4f8aa5h',
-  center: center,
-  zoom: dzoom,
-  minZoom: dzoom,
-  maxZoom: 12,
-  interactive: false
-  });
+// var afterMap3 = new mapboxgl.Map({
+//   container: 'after3',
+//   style: 'mapbox://styles/startribune/ck1b7427307bv1dsaq4f8aa5h',
+//   center: center,
+//   zoom: dzoom,
+//   minZoom: dzoom,
+//   maxZoom: 12,
+//   interactive: false
+//   });
 
-  // afterMap3.addControl(new mapboxgl.NavigationControl());
+//   // afterMap3.addControl(new mapboxgl.NavigationControl());
 
-  beforeMap3.scrollZoom.disable();
-  beforeMap3.doubleClickZoom.disable();
-  beforeMap3.touchZoomRotate.disableRotation();
-  beforeMap3.dragRotate.disable();
+//   beforeMap3.scrollZoom.disable();
+//   beforeMap3.doubleClickZoom.disable();
+//   beforeMap3.touchZoomRotate.disableRotation();
+//   beforeMap3.dragRotate.disable();
 
-  afterMap3.scrollZoom.disable();
-  afterMap3.doubleClickZoom.disable();
-  afterMap3.touchZoomRotate.disableRotation();
-  afterMap3.dragRotate.disable();
+//   afterMap3.scrollZoom.disable();
+//   afterMap3.doubleClickZoom.disable();
+//   afterMap3.touchZoomRotate.disableRotation();
+//   afterMap3.dragRotate.disable();
 
-  // const toggleControl3 = new CityReset();
-  // afterMap3.addControl(toggleControl3,'top-right');
+//   // const toggleControl3 = new CityReset();
+//   // afterMap3.addControl(toggleControl3,'top-right');
 
-  //   $('.my-custom-control2').on('click', function(){
-  //   afterMap3.jumpTo({
-  //     center: center,
-  //     zoom: dzoom,
-  //   });
-  // });
+//   //   $('.my-custom-control2').on('click', function(){
+//   //   afterMap3.jumpTo({
+//   //     center: center,
+//   //     zoom: dzoom,
+//   //   });
+//   // });
 
-  var container3 = '#comparison-container3';
-  var map3 = new mapboxgl.Compare(afterMap3, beforeMap3, container3, {});
+//   var container3 = '#comparison-container3';
+//   var map3 = new mapboxgl.Compare(afterMap3, beforeMap3, container3, {});
    
-  beforeMap3.on('load', function() {
+//   beforeMap3.on('load', function() {
 
-    beforeMap3.addSource('mn', {
-        type: 'geojson',
-        data: mn
-      });
+//     beforeMap3.addSource('mn', {
+//         type: 'geojson',
+//         data: mn
+//       });
 
-      beforeMap3.addLayer({
-            'id': 'mpls-layer',
-            'interactive': true,
-            'source': 'mn',
-            'layout': {},
-            'type': 'line',
-            'paint': {
-              'line-width': 1,
-              'line-color': '#aaaaaa'
-            }
-      });
+//       beforeMap3.addLayer({
+//             'id': 'mpls-layer',
+//             'interactive': true,
+//             'source': 'mn',
+//             'layout': {},
+//             'type': 'line',
+//             'paint': {
+//               'line-width': 1,
+//               'line-color': '#aaaaaa'
+//             }
+//       });
 
-    });
+//     });
 
-  afterMap3.on('load', function() {
+//   afterMap3.on('load', function() {
 
-    afterMap3.addSource('mn', {
-        type: 'geojson',
-        data: mn
-      });
+//     afterMap3.addSource('mn', {
+//         type: 'geojson',
+//         data: mn
+//       });
 
-    afterMap3.addLayer({
-            'id': 'mpls-layer',
-            'interactive': true,
-            'source': 'mn',
-            'layout': {},
-            'type': 'line',
-            'paint': {
-              'line-width': 1,
-              'line-color': '#aaaaaa'
-            }
-      });
+//     afterMap3.addLayer({
+//             'id': 'mpls-layer',
+//             'interactive': true,
+//             'source': 'mn',
+//             'layout': {},
+//             'type': 'line',
+//             'paint': {
+//               'line-width': 1,
+//               'line-color': '#aaaaaa'
+//             }
+//       });
 
-    });
+//     });
 
 // map3.on('load', function() {
 
