@@ -79,13 +79,17 @@ user-select: none;
 }
 
 .left {
-  width:48%;
-  text-align:left;
+  left:10px;
+  position:absolute;
+  top:10px;
+  z-index:999;
 }
 
 .right {
-  width:48%;
-  text-align:right;
+  right:10px;
+  position:absolute;
+  top:10px;
+  z-index:999;
 }
 
 .mapboxgl-canvas {
