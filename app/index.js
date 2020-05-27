@@ -173,7 +173,7 @@ var afterMap1 = new mapboxgl.Map({
   // });
 
   var container1 = '#comparison-container1';
-  var map1 = new mapboxgl.Compare(afterMap1, beforeMap1, container1, {});
+  var map1 = new mapboxgl.Compare(beforeMap1, afterMap1, container1, {});
 
   beforeMap1.on('load', function() {
 
@@ -332,7 +332,7 @@ var afterMap2 = new mapboxgl.Map({
   // });
 
   var container2 = '#comparison-container2';
-  var map2 = new mapboxgl.Compare(afterMap2, beforeMap2, container2, {});
+  var map2 = new mapboxgl.Compare(beforeMap2, afterMap2, container2, {});
 
   beforeMap2.on('load', function() {
 
